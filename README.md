@@ -133,22 +133,52 @@ This lab wasn't just following steps — these are real issues I diagnosed and f
 
 ## 📸 Screenshots
 
-> Screenshots organized by phase — see `/screenshots` folder
+### Domain Creation
+![Domain created](screenshots/LOROinc%20AD.png)
 
-1. Domain creation — `Get-ADDomain` output showing LOROINC.LOCAL
-2. OU structure in Active Directory Users and Computers
-3. User and group creation (GRP-IT-Admins with members)
-4. DHCP scope active (192.168.100.50–200)
-5. Password Policy GPO settings
-6. LOROINC-ScreenLock and LOROINC-LoginBanner linked to domain
-7. `gpresult /r` showing applied GPOs
-8. Windows 11 joined to domain — welcome dialog
-9. Domain login confirmed — `whoami` showing `loroinc\i.loyo`
-10. NTFS permissions on IT-Share
-11. Access Denied error on HR-Share (permission boundary working)
-12. Event 4740 — account lockout detail
-13. PowerShell unlock — LockedOut: True → False
-14. Active RDP session from Windows 11 to LOROINC-DC01
+### OU Structure
+![OU Tree](screenshots/OU%20tree.png)
+
+### Security Groups
+![IT Admin Members](screenshots/IT%20admin%20members.png)
+
+### DHCP Scope
+![DHCP Active](screenshots/DHCP%20active.png)
+
+### Static IP Configuration
+![IPv4 Static](screenshots/IPv4%20static.png)
+
+### GPO Status
+![GPO Status](screenshots/GPO-Status.png)
+
+### Login Banner GPO
+![Login Banner](screenshots/banner.png)
+
+### Domain Join — Windows 11
+![Created in IT OU](screenshots/created%20in%20IT%20OU.png)
+
+### NTFS Permissions — IT Share Access
+![NTFS Permission 1](screenshots/NTFS%20permission%201.png)
+
+### NTFS Permissions — Access Denied (HR Share)
+![Access Denied](screenshots/NTFS%20permission%202%20%28access%20De....png)
+
+### Account Lockout — Event Viewer
+![Event Viewer](screenshots/even%20viewer%203.png)
+![Event Viewer](screenshots/event%20viewer-1.png)
+
+### Account Disabled
+![Account Disable](screenshots/acount-disable.png)
+
+### Password Reset
+![Change Password](screenshots/Change%20Password%20i.loyo.png)
+
+### Remote Desktop — Connection Successful
+![Remote Desk Success](screenshots/Remote%20desk%20succesful.png)
+![Remote Desk Win11](screenshots/Remote%20Desk%20-win11.png)
+
+### PowerShell Scripts Used
+![Powershell Script](screenshots/Powershell%20script%20for%20AD%20Ds%20D....png)
 
 ---
 
